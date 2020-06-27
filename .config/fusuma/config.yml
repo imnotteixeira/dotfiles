@@ -1,0 +1,16 @@
+swipe:
+  3:
+    left: 
+      command: 'sh ~/desktop_switcher.sh 1'
+    right: 
+      command: 'sh ~/desktop_switcher.sh -1'
+    up: 
+      command: 'sh ~/activities_shower.sh 1'
+    down: 
+      command: 'sh ~/activities_shower.sh -1'
+threshold:
+  swipe: 0.4
+  pinch: 0.2
+interval:
+  swipe: 0.3
+  pinch: 0.1
