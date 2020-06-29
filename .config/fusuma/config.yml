@@ -1,13 +1,13 @@
 swipe:
   3:
     left: 
-      command: 'sh ~/desktop_switcher.sh 1'
+      command: 'qdbus org.kde.KWin /KWin nextDesktop'
     right: 
-      command: 'sh ~/desktop_switcher.sh -1'
+      command: 'qdbus org.kde.KWin /KWin previousDesktop'
     up: 
-      command: 'sh ~/activities_shower.sh 1'
+      command: 'qdbus org.kde.kglobalaccel /component/lattedock invokeShortcut "activate widget 4"'
     down: 
-      command: 'sh ~/activities_shower.sh -1'
+      command: 'qdbus org.kde.kglobalaccel /component/lattedock invokeShortcut "activate widget 4"'
 threshold:
   swipe: 0.4
   pinch: 0.2
