@@ -5,11 +5,11 @@ swipe:
     right: 
       command: 'qdbus org.kde.KWin /KWin previousDesktop'
     up: 
-      command: 'qdbus org.kde.kglobalaccel /component/lattedock invokeShortcut "activate widget 4"'
+      command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"'
     down: 
-      command: 'qdbus org.kde.kglobalaccel /component/lattedock invokeShortcut "activate widget 4"'
+      command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"'
 threshold:
-  swipe: 0.4
+  swipe: 0.6
   pinch: 0.2
 interval:
   swipe: 0.3
