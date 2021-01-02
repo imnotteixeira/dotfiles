@@ -7,7 +7,7 @@ swipe:
     up: 
       command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"'
     down: 
-      command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "Expose"'
+      command: 'qdbus org.kde.kglobalaccel /component/kwin invokeShortcut "ExposeAll"'
 threshold:
   swipe: 0.6
   pinch: 0.2
