@@ -2,7 +2,7 @@
 
 ## VSCode Settings + Extensions (Using Settings Sync Extension)
 
-https://gist.github.com/imnotteixeira/5e36083e638208af6a7050272d11f47c
+https://gist.github.com/imnotteixeira/2975306e7b53ab6f4c5cf37672b6b3d1
 
 ### Configure VSCode Terminal Font (Powerline)
 
