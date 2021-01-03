@@ -15,6 +15,9 @@
  * Media is controlled with `playerctl` (works with browser media as well!)
  * Bluetooth is handled by `blueman` 
 
+### TODO
+ * Automatic screen configuration when external monitor connected (maybe something like autorandr?)
+
 ## Additional Stuff for configuration
 
 ### VSCode Settings + Extensions (Using Settings Sync Extension)
