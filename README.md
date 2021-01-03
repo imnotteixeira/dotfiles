@@ -2,13 +2,18 @@
 
 ## Packages used
 
-* WM: i3-gaps
-* Compositor: Picom (tyrone144 [fork](https://github.com/tryone144/picom) for the nice blur)
-* Polybar (TODO)
-* Terminal: zsh + oh-my-zsh + p10k theme :: xfce terminal with nord color scheme
-* yadm for managing dotfiles (this repo)
-* Locking (TODO: i3-lock?? on sleep)
+ * WM: i3-gaps
+ * Compositor: Picom (tyrone144 [fork](https://github.com/tryone144/picom) for the nice blur)
+ * Polybar (TODO)
+ * Terminal: zsh + oh-my-zsh + p10k theme :: xfce terminal with nord color scheme
+ * yadm for managing dotfiles (this repo)
+ * Locking (TODO: i3-lock?? on sleep)
 
+### Additional Info
+ * Screen backlight is controlled with `light`
+ * Volume is controlled with `pactl`
+ * Media is controlled with `playerctl` (works with browser media as well!)
+ * Bluetooth is handled by `blueman` 
 
 ## Additional Stuff for configuration
 
