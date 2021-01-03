@@ -263,22 +263,22 @@ bindsym XF86MonBrightnessDown exec "light -U 10;"
 bindsym Shift+XF86MonBrightnessUp exec "notify-send 'Brightness at ' $(light -G)"
 
 # Multimedia Keys:
-
+# Using amixer so that it works for any sound sink (speakers or BT headphones, etc)
 # volume
-#bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+ && pkill -RTMIN+1 i3blocks
-#bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%- && pkill -RTMIN+1 i3blocks
-#
+bindsym XF86AudioRaiseVolume exec amixer -D pulse sset Master 5%+
+bindsym XF86AudioLowerVolume exec amixer -D pulse sset Master 5%-
+
+# mute
+bindsym XF86AudioMute exec amixer -D pulse set Master 1+ toggle
+
 # gradular volume control
 #bindsym $mod+XF86AudioRaiseVolume exec amixer -D pulse sset Master 1%+ && pkill -RTMIN+1 i3blocks
 #bindsym $mod+XF86AudioLowerVolume exec amixer -D pulse sset Master 1%- && pkill -RTMIN+1 i3blocks
-#
-# mute
-#bindsym XF86AudioMute exec amixer sset Master toggle && killall -USR1 i3blocks
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
+#bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5% #increase sound volume
+#bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5% #decrease sound volume
+#bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle # mute sound
 
 # Media player controls (Requires playerctl)
 # Have to use play-pause since play button is the same as the pause one for my pc
