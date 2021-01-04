@@ -13,7 +13,8 @@
  * Screen backlight is controlled with `light`
  * Volume is controlled with `pactl`
  * Media is controlled with `playerctl` (works with browser media as well!)
- * Bluetooth is handled by `blueman` 
+ * Bluetooth is handled by `blueman`
+ * Screenshots with `maim` 
 
 ### TODO
  * Automatic screen configuration when external monitor connected (maybe something like autorandr?)
