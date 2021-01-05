@@ -21,6 +21,20 @@
 
 ## Additional Stuff for configuration
 
+### Set default application for audio/video playback (vlc in this case)
+
+#### Audio
+
+```bash
+grep "^MimeType=" /usr/share/applications/vlc.desktop | cut -d "=" -f 2 | xargs -d ';' -n 1 | grep -e "^audio/" -e "^x-content/audio" | xargs -n 1 -I '{}' xdg-mime default vlc.desktop '{}'
+```
+
+#### Video
+
+```bash
+grep "^MimeType=" /usr/share/applications/vlc.desktop | cut -d "=" -f 2 | xargs -d ';' -n 1 | grep -e "^video/" -e "^x-content/video" | xargs -n 1 -I '{}' xdg-mime default vlc.desktop '{}'
+```
+
 ### VSCode Settings + Extensions (Using Settings Sync Extension)
 
 https://gist.github.com/imnotteixeira/5e36083e638208af6a7050272d11f47c
