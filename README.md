@@ -14,7 +14,8 @@
  * Volume is controlled with `pactl`
  * Media is controlled with `playerctl` (works with browser media as well!)
  * Bluetooth is handled by `blueman`
- * Screenshots with `maim` 
+ * Screenshots with `maim`
+ * PDF Reader: `zathura` (nord color config in `.config/zathura/zathurarc`)
 
 ### TODO
  * Automatic screen configuration when external monitor connected (maybe something like autorandr?)
