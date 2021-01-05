@@ -132,18 +132,16 @@ set $ws5 ""
 bindsym $mod+s exec --no-startup-id ~/.config/i3/scripts/empty_workspace.sh
 
 # Open workspace 0 on external monitor always
-
 workspace $ws0 output DP1
 
 # autostart start applications + bind program to workspace:
-assign [class="(?i)firefox"] $ws2
-for_window [class=(?i)firefox] focus
-assign [class="Thunar"] $ws3
-for_window [class=Thunar] focus
-assign [class="Thunderbird"] $ws4
-for_window [class=Thunderbird] focus
+# assign [class="(?i)firefox"] $ws2
+# for_window [class=(?i)firefox] focus
 assign [class="TelegramDesktop"] $ws5
-for_window [class=TelegramDesktop] focus
+# for_window [class=TelegramDesktop] focus
+assign [class="Discord"] $ws5
+# for_window [class=Discord] focus
+assign [class="Thunderbird"] $ws4
 
 # Autostart apps:
 #exec --no-startup-id sleep 2 && xfce4-terminal
