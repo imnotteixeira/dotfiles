@@ -168,6 +168,9 @@ exec --no-startup-id /usr/bin/dunst
 # Clipboard Mananger
 exec --no-startup-id xfce4-clipman
 
+# Redshift (Blue light filter)
+exec --no-startup-id redshift-gtk
+
 # set floating (nontiling)for apps needing it:
 for_window [class="Yad" instance="yad"] floating enable
 for_window [class="Galculator" instance="galculator"] floating enable
