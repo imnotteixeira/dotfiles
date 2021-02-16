@@ -186,6 +186,7 @@ for_window [class="qt5ct" instance="qt5ct"] floating enable
 for_window [class="Blueberry.py" instance="blueberry.py"] floating enable
 for_window [class="Bluetooth-sendto" instance="bluetooth-sendto"] floating enable
 for_window [class="Pamac-manager"] floating enable
+for_window [class="Blueman-manager"] floating enable
 
 # firefox - move the pop-up to the container *below* the first shell
 for_window [window_role="PictureInPicture"] \
@@ -301,8 +302,9 @@ bindsym $mod+ctrl+w exec "/usr/bin/firefox"
 #bindsym $mod+n exec "/usr/bin/thunar"
 #bindsym Print exec "xfce4-screenshooter -r ~/%Y-%m-%d-%T-screenshot.png"
 #bindsym Ctrl+Shift+F11 exec "xfce4-screenshooter -cr"
-bindsym Print exec "maim ~/$(date +%Y-%m-%d-%T)-screenshot.png"
+bindsym F11 exec "maim ~/$(date +%Y-%m-%d-%T)-screenshot.png"
 bindsym Ctrl+Shift+F11 exec "maim -sl --color=0,0,0,0.8 | xclip -selection clipboard -t image/png"
+bindsym Ctrl+F11 exec "maim -sl --color=0,0,0,0.8 ~/$(date +%Y-%m-%d-%T)-screenshot.png"
 
 # Redirect sound to headphones
 bindsym $mod+m exec "/usr/local/bin/switch-audio-port"
