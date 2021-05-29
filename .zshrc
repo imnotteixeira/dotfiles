@@ -119,3 +119,7 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # Add asdf version manager
 . /opt/asdf-vm/asdf.sh
+
+# Set JAVA_HOME from asdf
+. ~/.asdf/plugins/java/set-java-home.zsh
+
