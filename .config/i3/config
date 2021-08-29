@@ -126,11 +126,13 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # workspace-edit:
-set $ws1 ""
-set $ws2 ""
-set $ws3 ""
-set $ws4 ""
-set $ws5 ""
+set $ws0 "External"
+set $ws1 "Terminal"
+set $ws2 "Browser"
+set $ws3 "Code"
+set $ws4 "Utils"
+set $ws5 "Messaging"
+set $ws6 "Spotify"
 
 bindsym $mod+ctrl+s exec --no-startup-id ~/.config/i3/scripts/empty_workspace.sh
 
@@ -363,4 +365,5 @@ bindsym F10 exec rofi -show window -line-padding 4 \
                 -lines 6 -padding 50 -hide-scrollbar \
                 -show-icons -drun-icon-theme "Arc-X-D" -font "Droid Sans Regular 10"                
                 
+exec --no-startup-id i3-msg workspace $ws2
 
