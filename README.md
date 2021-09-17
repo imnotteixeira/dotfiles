@@ -7,7 +7,7 @@
  * Polybar (missing tray icons, since I don't want them on the corner -after the power button, still need to find a way to put them where I want)
  * Terminal: zsh + oh-my-zsh + p10k theme :: xfce terminal with nord color scheme
  * yadm for managing dotfiles (this repo)
- * Locking (TODO: i3-lock?? on sleep)
+ * Locking: betterlockscreen
 
 ### Additional Info
  * Screen backlight is controlled with `light`
