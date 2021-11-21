@@ -159,7 +159,7 @@ exec --no-startup-id dex -a -s /etc/xdg/autostart/:~/.config/autostart
 
 # transparency:
 #exec --no-startup-id xcompmgr -c
-exec --no-startup-id picom -bfc --experimental-backends
+exec --no-startup-id picom -bfc
 
 #set wallpaper:
 exec --no-startup-id nitrogen --restore

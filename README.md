@@ -3,11 +3,12 @@
 ## Packages used
 
  * WM: i3-gaps
- * Compositor: Picom (tyrone144 [fork](https://github.com/tryone144/picom) for the nice blur)
- * Polybar (missing tray icons, since I don't want them on the corner -after the power button, still need to find a way to put them where I want)
+ * Compositor: Picom (ibhagwan [fork](https://github.com/ibhagwan/picom) for the nice blur and rounded corners)
+ * Polybar
  * Terminal: zsh + oh-my-zsh + p10k theme :: xfce terminal with nord color scheme
  * yadm for managing dotfiles (this repo)
  * Locking: betterlockscreen
+ * Notifications: Dunst
 
 ### Additional Info
  * Screen backlight is controlled with `light`
