@@ -167,6 +167,8 @@ exec --no-startup-id nitrogen --restore
 #set powersavings for display:
 exec --no-startup-id xset s 480 dpms 600 600 600
 
+exec --no-startup-id xss-lock -- betterlockscreen -l
+
 # Desktop notifications_
 exec --no-startup-id /usr/bin/dunst
 
