@@ -126,13 +126,13 @@ bindsym $mod+a focus parent
 bindsym $mod+Shift+a focus child
 
 # workspace-edit:
-set $ws0 "External"
-set $ws1 "Terminal"
-set $ws2 "Browser"
-set $ws3 "Code"
-set $ws4 "Utils"
-set $ws5 "Messaging"
-set $ws6 "Spotify"
+set $ws0 "0: External"
+set $ws1 "1: Terminal"
+set $ws2 "2: Browser"
+set $ws3 "3: Code"
+set $ws4 "4: Utils"
+set $ws5 "5: Messaging"
+set $ws6 "6: Spotify"
 
 bindsym $mod+ctrl+s exec --no-startup-id ~/.config/i3/scripts/empty_workspace.sh
 
